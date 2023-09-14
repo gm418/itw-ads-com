@@ -1,3 +1,8 @@
+// Color
+$primary: #c50637;
+$emphasis-color: $primary;
+$nav-link-color: black;
+
 // Spacing
 $big-spacing: 8.75;
 
@@ -13,6 +18,19 @@ $spacers: map-merge($custom-spacing, $spacers);
 // import bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+// General classes
 .fb-content {
     flex-basis: content;
+}
+
+// Pages specific styles
+.page-home {
+    em {
+        color: $emphasis-color;
+        font-style: normal;
+    }
+    
+    h2::first-letter {
+        color: $primary;
+    }
 }
