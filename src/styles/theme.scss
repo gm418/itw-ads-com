@@ -12,3 +12,7 @@ $spacers: map-merge($custom-spacing, $spacers);
 
 // import bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.fb-content {
+    flex-basis: content;
+}
