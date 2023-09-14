@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Test IW</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="src/styles/theme.scss" />
+</head>
+<body>
+    <nav class="navbar bg-whitet">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/images/logo-devup.svg" class="logo" alt=""/>
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!--
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rubrique 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rubrique 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rubrique 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rubrique 4</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                FR
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="#">EN</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">IT</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">DE</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
+                <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>-->
+                <img src="/images/icone-search.svg" alt="" />
+            </form>
+            <a href="#" class="btn btn-primary">VOUS AVEZ UN PROJET ?</a>
+        </div>
+    </nav>
+<section class="main">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+            ></button>
+            <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+            ></button>
+            <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+            ></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/cover.jpg" class="d-block carousel-img" alt="..." />
+                <div class="carousel-caption">
+                    <h2>Une Terre d'excellence</h2>
+                    <p>à seulement une heure de Paris</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/cover.jpg" class="d-block carousel-img" alt="..." />
+                <div class="carousel-caption">
+                    <h2>Un écosystème dynamique</h2>
+                    <p>Plus de 2000 entreprises créées cette année</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/cover.jpg" class="d-block carousel-img" alt="..." />
+                <div class="carousel-caption">
+                    <h2>Une implantation facilitée</h2>
+                    <p>Grâce à nos conseillers et nos services uniques</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    <ul class="nav quick-link text-center">
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="/images/icone-ecosysteme.svg" class="d-block" alt="" />
+                Un écosystème<br />dynamique
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="/images/icone-implanter.svg" class="d-block" alt="" />
+                Vous implanter<br />en région
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="/images/icone-developper.svg" class="d-block" alt="" />
+                Développer<br />votre activité
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="/images/icone-services.svg" class="d-block" alt="" />
+                Les services<br />dev'up
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="/images/icone-success.svg" class="d-block" alt="" />
+                Success<br />story
+            </a>
+        </li>
+    </ul>
+    <div class="actu">
+        <div class="card actu-high-light mb-5">
+            <div class="row">
+                <div class="col-md-5 offset-md-1">
+                    <img src="/images/actu-high-light.jpg" class="card-img-left" alt="..."/>
+                </div>
+                <div class="col-md-4 offset-md-2">
+                    <div class="card-body">
+                        <h2 class="card-subtitle">À la une</h2>
+                        <h3 class="card-title">
+                            Le groupe Vorwerk renforce sa présence en Centre-Val de
+                            Loire avec un deuxième site de production Thermomix.
+                        </h3>
+                        <a href="#" class="card-link">Lire la suite</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card actu-breve">
+                    <img src="/images/actu-bref.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h2 class="card-subtitle">22/08/2022</h2>
+                        <h3 class="card-title">
+                            Cérémonie de remise des trophées des entreprises
+                            d'Eure-et-Loir
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card actu-breve">
+                    <img src="/images/actu-bref-1.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h2 class="card-subtitle">08/07/2022</h2>
+                        <h3 class="card-title">
+                            Étudiants, doctorants et chercheurs, embarquez dans
+                            l'aventure DeepTech
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card actu-breve">
+                    <img src="/images/actu-bref-2.jpg" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h2 class="card-subtitle">07/07/2022</h2>
+                        <h3 class="card-title">
+                            Dispositifs d'accompagnement et de financement passés au
+                            crible en Val de Cher Controis
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<footer>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <ul class="navbar-nav">
+                <!--
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mentions légales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">RGPD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cookies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accessibilité</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Espace presse</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+
+<script src="node_modules/@popperjs/core/dist/esm/popper-lite.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
