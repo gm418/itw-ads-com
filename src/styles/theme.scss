@@ -1,0 +1,14 @@
+// Spacing
+$big-spacing: 8.75;
+
+//import the functions and the variables
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules//bootstrap/scss/variables";
+
+$custom-spacing: (
+    6: $spacer * $big-spacing
+);
+$spacers: map-merge($custom-spacing, $spacers);
+
+// import bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
