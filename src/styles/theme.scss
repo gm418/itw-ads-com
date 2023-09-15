@@ -12,6 +12,16 @@ $nav-link-color: black;
 // Spacing
 $big-spacing: 8.75;
 
+// font-family
+$heading-2-font-family: 'nexabold';
+$heading-3-font-family: 'open_sansregular';
+$body-font-family: 'open_sansregular';
+$body-font-family-light: 'open_sanslight';
+$time-font-family: 'nexabold';
+$quick-link-font-family: 'nexabold';
+$link-font-family: 'open_sansbold';
+$open-sanslight: 'open_sanslight';
+
 //import the functions and the variables
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules//bootstrap/scss/variables";
@@ -29,16 +39,46 @@ body {
     height: 100%;
 }
 
+body {
+    font-family: $body-font-family;
+}
+
+h2 {
+    font-family: $heading-2-font-family;
+    font-size: calc(5.203rem + 0.9vw);
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+.container-quick-link {
+    bottom: 15vh;
+}
+
+.quick-link {
+    font-family: $quick-link-font-family;
+}
+
 // General classes
 .fb-content {
     flex-basis: content;
 }
 
-.link-padded-underline {
+.main-news-link {
     text-decoration: none;
     border-bottom-style: solid;
     border-width: 1px;
     padding-bottom: 3px;
+    font-family: $link-font-family;
+}
+
+.actu .col:first-child {
+    padding-left: 0;
+}
+
+.actu .col:last-child {
+    padding-right: 0;
 }
 
 .card-border-none {
@@ -48,6 +88,10 @@ body {
     img {
         border-radius: 0;
     }
+}
+
+.open-sanslight {
+    font-family: $open-sanslight;
 }
 
 // Pages specific styles
@@ -65,7 +109,7 @@ body {
         top: 12.5rem;
         bottom: unset;
         right: unset;
-        left: 1rem;
+        left: 8.2rem;
         margin: 0;
     }
 
@@ -81,12 +125,7 @@ body {
 }
 
 .page-news {
-    a {
-        text-decoration: none;
-        border-bottom: 1px solid $primary;
-        padding-bottom: 3px;
+    h2 {
+        font-size: 3.125rem;
     }
-}
-.quick-link {
-    border: 5px solid limegreen;
 }
