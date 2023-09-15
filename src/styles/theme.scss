@@ -28,6 +28,13 @@ body {
     flex-basis: content;
 }
 
+.link-padded-underline {
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding-bottom: 3px;
+}
+
 // Pages specific styles
 .page-home {
     em {
@@ -41,6 +48,13 @@ body {
 
 }
 
+.page-news {
+    a {
+        text-decoration: none;
+        border-bottom: 1px solid $primary;
+        padding-bottom: 3px;
+    }
+}
 .quick-link {
     border: 5px solid limegreen;
 }
