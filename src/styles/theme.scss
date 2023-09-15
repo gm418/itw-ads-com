@@ -18,6 +18,11 @@ $spacers: map-merge($custom-spacing, $spacers);
 // import bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+html,
+body {
+    height: 100%;
+}
+
 // General classes
 .fb-content {
     flex-basis: content;
