@@ -35,6 +35,15 @@ body {
     padding-bottom: 3px;
 }
 
+.card-border-none {
+    border: none;
+    border-radius: 0;
+
+    img {
+        border-radius: 0;
+    }
+}
+
 // Pages specific styles
 .page-home {
     em {
