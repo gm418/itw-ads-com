@@ -57,6 +57,23 @@ body {
         color: $primary;
     }
 
+    .carousel-indicators {
+        top: 12.5rem;
+        bottom: unset;
+        right: unset;
+        left: 1rem;
+        margin: 0;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        background-color: hsla(129, 7%, 20%, 0.12);
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .carousel-indicators .active {
+        background-color: $primary;
+    }
 }
 
 .page-news {
