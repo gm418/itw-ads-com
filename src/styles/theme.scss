@@ -33,4 +33,8 @@ $spacers: map-merge($custom-spacing, $spacers);
     h2::first-letter {
         color: $primary;
     }
+
+    .quick-link {
+        border: 5px solid limegreen;
+    }
 }
