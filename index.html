@@ -9,7 +9,7 @@
 <body>
 <header>
     <nav class="navbar bg-white">
-        <div class="container-fluid">
+        <div class="container-fluid justify-content-start">
             <a class="navbar-brand" href="#" aria-label="Lien vers la page d'accueil.">
                 <img src="/images/logo-devup.svg" class="logo" alt="Logo de Dev'up."/>
             </a>
@@ -17,67 +17,80 @@
             <button
                 class="navbar-toggler"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
                 aria-expanded="false"
                 aria-label="Ouvre ou ferme la navigation principale."
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!--
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header justify-content-end">
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Fermer"
+                    ></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!--
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                        -->
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">Rubrique 1</a>
                         </li>
-                    -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Rubrique 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Rubrique 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Rubrique 3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Rubrique 4</a>
-                    </li>
-                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rubrique 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rubrique 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rubrique 4</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="dropdown">
-                <button
-                    class="btn dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                >
-                FR
-                </button>
-
-                <ul class="dropdown-menu">
-                    <li>
-                        <a class="dropdown-item" href="#">EN</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">IT</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">DE</a>
-                    </li>
-                </ul>
+            <div class="d-flex ms-auto">
+                <div class="dropdown">
+                    <button
+                        class="btn dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                    FR
+                    </button>
+    
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">EN</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">IT</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">DE</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <form class="d-flex" role="search">
+                    <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>-->
+                    <img src="/images/icone-search.svg" alt="" />
+                </form>
+    
+                <a href="#" class="btn btn-primary">VOUS AVEZ UN PROJET ?</a>
             </div>
-
-            <form class="d-flex" role="search">
-                <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>-->
-                <img src="/images/icone-search.svg" alt="" />
-            </form>
-
-            <a href="#" class="btn btn-primary">VOUS AVEZ UN PROJET ?</a>
         </div>
     </nav>
 </header>
