@@ -38,6 +38,7 @@ $spacers: map-merge($custom-spacing, $spacers);
 html,
 body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -122,12 +123,53 @@ h3 {
         color: $primary;
     }
 
-    .carousel-indicators {
-        top: 12.5rem;
-        bottom: unset;
-        right: unset;
-        left: 8.2rem;
-        margin: 0;
+    @media (min-width: 992px) {
+        .carousel-indicators {
+            top: 12.5rem;
+            bottom: unset;
+            right: unset;
+            margin: 0;
+        }
+    }
+
+    .main-carousel {
+        min-height: 75dvh;
+
+        > .carousel-inner {
+            height: 75dvh;
+
+            >.carousel-item {
+                height: 75dvh;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+            > .carousel-item:nth-child(1) {
+                background-image: url('../../public/images/cover.jpg');
+            }
+
+            >.carousel-item:nth-child(2) {
+                background-image: url('../../public/images/cover.jpg');
+            }
+
+            >.carousel-item:nth-child(3) {
+                background-image: url('../../public/images/cover.jpg');
+            }
+        }
+
+    }
+
+    @media (max-width: 991px) {
+        .text-overlay > * {
+            background: rgba(255, 255, 255, 0.75);
+        }
+    } 
+
+    .text-center-absolute {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .carousel-indicators [data-bs-target] {
