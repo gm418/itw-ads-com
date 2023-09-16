@@ -21,6 +21,7 @@ $time-font-family: 'nexabold';
 $quick-link-font-family: 'nexabold';
 $link-font-family: 'open_sansbold';
 $open-sanslight: 'open_sanslight';
+$open-sansbold: 'open_sansbold';
 
 //import the functions and the variables
 @import "../../node_modules/bootstrap/scss/functions";
@@ -62,6 +63,14 @@ h3 {
 
 .quick-link {
     font-family: $quick-link-font-family;
+}
+
+.btn {
+    font-family: $open-sansbold;
+}
+
+.dropdown-toggle::after {
+    display: none;
 }
 
 // General classes
