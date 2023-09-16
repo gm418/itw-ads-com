@@ -8,259 +8,275 @@
 </head>
 <body>
 <header>
-    <nav class="navbar bg-white">
-        <div class="container-fluid justify-content-start">
-            <a class="navbar-brand" href="#" aria-label="Lien vers la page d'accueil.">
-                <img src="/images/logo-devup.svg" class="logo" alt="Logo de Dev'up."/>
-            </a>
-
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-                aria-expanded="false"
-                aria-label="Ouvre ou ferme la navigation principale."
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header justify-content-end">
-                    <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Fermer"
-                    ></button>
-                </div>
-
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <!--
-                            <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                        -->
-                        <li class="nav-item">
-                            <a class="nav-link link-primary" href="#">Rubrique 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-primary" href="#">Rubrique 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-primary" href="#">Rubrique 3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-primary" href="#">Rubrique 4</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="d-flex ms-auto">
-                <div class="mx-2">
-                    <button class="btn dropdown" type="button">
-                        <span class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            FR
-                        </span>    
-                        <span class="ms-1">
-                            <img src="/images/icone-chevron-down.svg" alt="" aria-hidden="true">
-                        </span>
-                    </button>
-    
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a class="dropdown-item" href="#">EN</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">IT</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">DE</a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <form class="d-flex mx-2" role="search">
-                    <!--
-                        <input class="form-control rounded-pill me-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
-                    -->
-                    <button class="btn" type="submit">
-                        <img src="/images/icone-search.svg" alt="Icon to submit form." />
-                    </button>
-                </form>
-    
-                <a href="#" class="btn btn-primary btn-project px-5 py-3 mx-4">VOUS AVEZ UN PROJET ?</a>
+    <div class="container-fluid d-flex">
+        <div class="row flex-grow-1">
+            <div class="col-md-11">
+                <nav class="navbar bg-white">
+                    <div class="container-fluid justify-content-start">
+                        <a class="navbar-brand" href="#" aria-label="Lien vers la page d'accueil.">
+                            <img src="/images/logo-devup.svg" class="logo" alt="Logo de Dev'up."/>
+                        </a>
+            
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar"
+                            aria-expanded="false"
+                            aria-label="Ouvre ou ferme la navigation principale."
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header justify-content-end">
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Fermer"
+                                ></button>
+                            </div>
+            
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <!--
+                                        <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                    -->
+                                    <li class="nav-item">
+                                        <a class="nav-link link-primary" href="#">Rubrique 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-primary" href="#">Rubrique 2</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-primary" href="#">Rubrique 3</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link link-primary" href="#">Rubrique 4</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <div class="d-flex align-items-center ms-auto">
+                            <div class="mx-2">
+                                <button class="btn dropdown" type="button">
+                                    <span class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        FR
+                                    </span>    
+                                    <span class="ms-1">
+                                        <img src="/images/icone-chevron-down.svg" alt="" aria-hidden="true">
+                                    </span>
+                                </button>
+                
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">EN</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">IT</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">DE</a>
+                                    </li>
+                                </ul>
+                            </div>
+                
+                            <form class="d-flex mx-2" role="search">
+                                <!--
+                                    <input class="form-control rounded-pill me-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+                                -->
+                                <button class="btn" type="submit">
+                                    <img src="/images/icone-search.svg" alt="Icon to submit form." />
+                                </button>
+                            </form>
+                
+                            <a href="#" class="btn btn-primary btn-project px-5 py-3 mx-4">VOUS AVEZ UN PROJET ?</a>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
-    </nav>
+    </div>
 </header>
 
 <main class="main pb-6">
     <section class="page-home">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="">
-            <div class="carousel-indicators">
-                <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                ></button>
-                <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                ></button>
-                <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                ></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row justify-content-end align-items-center">
-                        <div class="col-md-6 mx-3 py-2">
-                            <h2 class="lh-1">Une Terre d'excellence</h2>
-                            <p class="fs-2 open-sanslight">à seulement une heure de Paris</p>
-                        </div>
-                        <div class="col-md-5 py-2">
-                            <img src="/images/cover.jpg" class="d-block carousel-img img-fluid" alt="..." />
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row justify-content-end align-items-center">
-                        <div class="col-md-6 mx-3 py-2">
-                            <h2 class="lh-1">Un écosystème dynamique</h2>
-                            <p class="fs-2 open-sanslight">Plus de 2000 entreprises créées cette année</p>
-                        </div>
-                        <div class="col-md-5 py-2">
-                            <img src="/images/cover.jpg" class="d-block carousel-img img-fluid" alt="..." />
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row justify-content-end align-items-center">
-                        <div class="col-md-6 mx-3 py-2">
-                            <h2 class="lh-1">Une implantation facilitée</h2>
-                            <p class="fs-2 open-sanslight">Grâce à nos conseillers et nos services uniques</p>
-                        </div>
-                        <div class="col-md-5 py-2">
-                            <img src="/images/cover.jpg" class="d-block carousel-img img-fluid" alt="..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="position-relative container-quick-link">
+        <div class="container-fluid">
             <div class="row justify-content-end">
-                <div class="col-8 px-0">
-                    <ul class="nav justify-content-between text-center fs-4">
-                        <li class="nav-item col-1 fb-content lh-sm">
-                            <a class="nav-link quick-link ps-0" href="#">
-                                <img src="/images/icone-ecosysteme.svg" class="d-block mx-auto img-fluid mb-4" alt="" />
-                                Un écosystème<br /><em>dynamique</em>
-                            </a>
-                        </li>
-                        <li class="nav-item col-1 fb-content lh-sm">
-                            <a class="nav-link quick-link" href="#">
-                                <img src="/images/icone-implanter.svg" class="d-block mx-auto img-fluid mb-4" alt="" />
-                                Vous <em>implanter</em><br />en région
-                            </a>
-                        </li>
-                        <li class="nav-item col-1 fb-content lh-sm">
-                            <a class="nav-link quick-link" href="#">
-                                <img src="/images/icone-developper.svg" class="d-block mx-auto img-fluid mb-4" alt="" />
-                                <em>Développer</em><br />votre activité
-                            </a>
-                        </li>
-                        <li class="nav-item col-1 fb-content lh-sm">
-                            <a class="nav-link quick-link" href="#">
-                                <img src="/images/icone-services.svg" class="d-block mx-auto img-fluid mb-4" alt="" />
-                                Les <em>services</em><br />dev'up
-                            </a>
-                        </li>
-                        <li class="nav-item col-1 fb-content lh-sm">
-                            <a class="nav-link quick-link" href="#">
-                                <img src="/images/icone-success.svg" class="d-block mx-auto img-fluid mb-4" alt="" />
-                                <em>Success</em><br />story
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-md-11">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="">
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"
+                            ></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row align-items-center">
+                                    <div class="col-md-7">
+                                        <h2 class="lh-1">Une Terre d'excellence</h2>
+                                        <p class="fs-2 open-sanslight">à seulement une heure de Paris</p>
+                                    </div>
+                                    <div class="col-md-5 py-2">
+                                        <img src="/images/cover.jpg" class="d-block carousel-img img-fluid" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-7">
+                                        <h2 class="lh-1">Un écosystème dynamique</h2>
+                                        <p class="fs-2 open-sanslight">Plus de 2000 entreprises créées cette année</p>
+                                    </div>
+                                    <div class="col-md-5 py-2">
+                                        <img src="/images/cover.jpg" class="d-block carousel-img img-fluid" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-7">
+                                        <h2 class="lh-1">Une implantation facilitée</h2>
+                                        <p class="fs-2 open-sanslight">Grâce à nos conseillers et nos services uniques</p>
+                                    </div>
+                                    <div class="col-md-5 py-2">
+                                        <img src="/images/cover.jpg" class="d-block carousel-img img-fluid" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="position-relative container-quick-link">
+                        <div class="row">
+                            <div class="col-8">
+                                <ul class="nav justify-content-between text-center fs-4">
+                                    <li class="nav-item col-1 fb-content lh-sm">
+                                        <a class="nav-link quick-link ps-0" href="#">
+                                            <img src="/images/icone-ecosysteme.svg" class="d-block mx-auto img-fluid mb-4" alt="" />
+                                            Un écosystème<br /><em>dynamique</em>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item col-1 fb-content lh-sm">
+                                        <a class="nav-link quick-link" href="#">
+                                            <img src="/images/icone-implanter.svg" class="d-block mx-auto img-fluid mb-4" alt="" />
+                                            Vous <em>implanter</em><br />en région
+                                        </a>
+                                    </li>
+                                    <li class="nav-item col-1 fb-content lh-sm">
+                                        <a class="nav-link quick-link" href="#">
+                                            <img src="/images/icone-developper.svg" class="d-block mx-auto img-fluid mb-4" alt="" />
+                                            <em>Développer</em><br />votre activité
+                                        </a>
+                                    </li>
+                                    <li class="nav-item col-1 fb-content lh-sm">
+                                        <a class="nav-link quick-link" href="#">
+                                            <img src="/images/icone-services.svg" class="d-block mx-auto img-fluid mb-4" alt="" />
+                                            Les <em>services</em><br />dev'up
+                                        </a>
+                                    </li>
+                                    <li class="nav-item col-1 fb-content lh-sm">
+                                        <a class="nav-link quick-link" href="#">
+                                            <img src="/images/icone-success.svg" class="d-block mx-auto img-fluid mb-4" alt="" />
+                                            <em>Success</em><br />story
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-3"></div>
             </div>
         </div>
     </section>
 
     <section class="page-news">
-        <div class="container-fluid px-6">
-            <div class="actu-high-light px-6 pb-5">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-md-7 ps-0">
-                        <img src="/images/actu-high-light.jpg" class="img-fluid d-block" alt="..."/>
-                    </div>
-                    <div class="col-md-4">
-                        <h2 class="mb-4">À la une</h2>
-                        <h3 class="mb-4 pt-3">
-                            Le groupe Vorwerk renforce sa présence en Centre-Val de
-                            Loire avec un deuxième site de production Thermomix.
-                        </h3>
-                        <div>
-                            <a href="#" class="card-link main-news-link pt-1">
-                                Lire la suite
-                            </a>
-                            <span class="ms-1" aria-hidden="true">
-                                <img src="/images/icone-chevron-right.svg" alt="">
-                            </span>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="actu-high-light pb-5">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-md-7 ps-0">
+                                <img src="/images/actu-high-light.jpg" class="img-fluid d-block" alt="..."/>
+                            </div>
+                            <div class="col-md-4">
+                                <h2 class="mb-4">À la une</h2>
+                                <h3 class="mb-4 pt-3">
+                                    Le groupe Vorwerk renforce sa présence en Centre-Val de
+                                    Loire avec un deuxième site de production Thermomix.
+                                </h3>
+                                <div>
+                                    <a href="#" class="card-link main-news-link pt-1">
+                                        Lire la suite
+                                    </a>
+                                    <span class="ms-1" aria-hidden="true">
+                                        <img src="/images/icone-chevron-right.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="actu px-6 pt-5">
-                <div class="row justify-content-between">
-                    <div class="col">
-                        <div class="card actu-breve card-border-none">
-                            <img src="/images/actu-bref.jpg" class="card-img-top mb-3" alt="..."/>
-                            <div class="card-body py-4">
-                                <time datetime="2022-08-22" class="card-subtitle text-primary">22/08/2022</time>
-                                <h3 class="card-title py-2">
-                                    Cérémonie de remise des trophées des entreprises
-                                    d'Eure-et-Loir
-                                </h3>
+                    <div class="actu pt-5">
+                        <div class="row justify-content-between">
+                            <div class="col">
+                                <div class="card actu-breve card-border-none">
+                                    <img src="/images/actu-bref.jpg" class="card-img-top mb-3" alt="..."/>
+                                    <div class="card-body py-4">
+                                        <time datetime="2022-08-22" class="card-subtitle text-primary">22/08/2022</time>
+                                        <h3 class="card-title py-2">
+                                            Cérémonie de remise des trophées des entreprises
+                                            d'Eure-et-Loir
+                                        </h3>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card actu-breve card-border-none">
-                            <img src="/images/actu-bref-1.jpg" class="card-img-top mb-3" alt="..."/>
-                            <div class="card-body py-4">
-                                <time datetime="2022-07-08" class="card-subtitle text-primary">08/07/2022</time>
-                                <h3 class="card-title py-2">
-                                    Étudiants, doctorants et chercheurs, embarquez dans
-                                    l'aventure DeepTech
-                                </h3>
+                            <div class="col">
+                                <div class="card actu-breve card-border-none">
+                                    <img src="/images/actu-bref-1.jpg" class="card-img-top mb-3" alt="..."/>
+                                    <div class="card-body py-4">
+                                        <time datetime="2022-07-08" class="card-subtitle text-primary">08/07/2022</time>
+                                        <h3 class="card-title py-2">
+                                            Étudiants, doctorants et chercheurs, embarquez dans
+                                            l'aventure DeepTech
+                                        </h3>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card actu-breve card-border-none">
-                            <img src="/images/actu-bref-2.jpg" class="card-img-top mb-3" alt="..."/>
-                            <div class="card-body py-4">
-                                <time datetime="2022-07-07" class="card-subtitle text-primary">07/07/2022</time>
-                                <h3 class="card-title py-2">
-                                    Dispositifs d'accompagnement et de financement passés au
-                                    crible en Val de Cher Controis
-                                </h3>
+                            <div class="col">
+                                <div class="card actu-breve card-border-none">
+                                    <img src="/images/actu-bref-2.jpg" class="card-img-top mb-3" alt="..."/>
+                                    <div class="card-body py-4">
+                                        <time datetime="2022-07-07" class="card-subtitle text-primary">07/07/2022</time>
+                                        <h3 class="card-title py-2">
+                                            Dispositifs d'accompagnement et de financement passés au
+                                            crible en Val de Cher Controis
+                                        </h3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -272,29 +288,34 @@
 
 <footer>
     <nav class="navbar navbar-dark bg-dark">
-        <div class="d-flex flex-grow-1 px-6">
-            <ul class="navbar-nav flex-row px-6 flex-grow-1 justify-content-evenly">
-                <!--
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Mentions légales</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">RGPD</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Cookies</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Accessibilité</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Espace presse</a>
-                </li>
-            </ul>
+        <div class="container-fluid">
+            <div class="row justify-content-center flex-grow-1">
+                <div class="col-md-7">
+                    <ul class="navbar-nav flex-row flex-grow-1 justify-content-between">
+                        <!--
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                        -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mentions légales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">RGPD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cookies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accessibilité</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Espace presse</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </nav>
 </footer>
