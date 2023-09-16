@@ -12,13 +12,13 @@
         <div class="row flex-grow-1">
             <div class="col-md-11">
                 <nav class="navbar bg-white">
-                    <div class="container-fluid justify-content-start">
+                    <div class="container-fluid justify-content-center justify-content-md-start">
                         <a class="navbar-brand" href="#" aria-label="Lien vers la page d'accueil.">
                             <img src="/images/logo-devup.svg" class="logo" alt="Logo de Dev'up."/>
                         </a>
-            
+
                         <button
-                            class="navbar-toggler"
+                            class="btn"
                             type="button"
                             data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar"
@@ -26,7 +26,8 @@
                             aria-expanded="false"
                             aria-label="Ouvre ou ferme la navigation principale."
                         >
-                            <span class="navbar-toggler-icon"></span>
+                            <div class="custom-toggle"></div>
+                            <span class="d-block">MENU</span>
                         </button>
             
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -59,10 +60,23 @@
                                         <a class="nav-link link-primary" href="#">Rubrique 4</a>
                                     </li>
                                 </ul>
+
+                                <div class="d-md-none mt-3">
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control rounded-pill me-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+                                        <button class="btn" type="submit">
+                                            <img src="/images/icone-search.svg" alt="Icon to submit form." />
+                                        </button>
+                                    </form>
+                                </div>
+
+                                <div class="d-md-none mt-4">
+                                    <a href="#" class="btn btn-primary btn-project px-4 py-2">VOUS AVEZ UN PROJET ?</a>
+                                </div>
                             </div>
                         </div>
             
-                        <div class="d-flex align-items-center ms-auto">
+                        <div class="d-flex align-items-center ms-md-auto">
                             <div class="mx-2">
                                 <button class="btn dropdown" type="button">
                                     <span class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -86,16 +100,20 @@
                                 </ul>
                             </div>
                 
-                            <form class="d-flex mx-2" role="search">
-                                <!--
-                                    <input class="form-control rounded-pill me-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
-                                -->
-                                <button class="btn" type="submit">
-                                    <img src="/images/icone-search.svg" alt="Icon to submit form." />
-                                </button>
-                            </form>
+                            <div class="d-none d-md-inline">
+                                <form class="d-flex mx-2" role="search">
+                                    <!--
+                                        <input class="form-control rounded-pill me-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+                                    -->
+                                    <button class="btn" type="submit">
+                                        <img src="/images/icone-search.svg" alt="Icon to submit form." />
+                                    </button>
+                                </form>
+                            </div>
                 
-                            <a href="#" class="btn btn-primary btn-project px-5 py-3 mx-4">VOUS AVEZ UN PROJET ?</a>
+                            <div class="d-none d-md-inline">
+                                <a href="#" class="btn btn-primary btn-project px-5 py-3 mx-4">VOUS AVEZ UN PROJET ?</a>
+                            </div>
                         </div>
                     </div>
                 </nav>
