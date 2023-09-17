@@ -10,8 +10,6 @@ $white: #fff;
 $black: #000;
 
 $navbar-dark-color: $white;
-$nav-link-color: $black;
-$emphasis-color: $primary;
 
 // Spacing
 $big-spacing: 8.75;
@@ -22,14 +20,23 @@ $ff-secondary: 'open_sansregular', sans-serif;
 $ff-secondary-700: 'open_sansbold', sans-serif;
 $ff-secondary-300: 'open_sanslight', sans-serif;
 
-$ff-body: $ff-secondary;
-$ff-heading-2: $ff-primary;
-$ff-heading-3: $ff-secondary;
+$font-family-base: $ff-secondary;
+$headings-font-family: $ff-primary;
 $ff-time: $ff-primary;
-$ff-quick-link: $ff-primary;
 $ff-link: $ff-secondary-700;
-$ff-btn: $ff-secondary-700;
+$ff-quick-link: $ff-primary;
+$btn-font-family: $ff-secondary-700;
 $ff-text-light: $ff-secondary-300;
+
+// Font-size
+$font-size-base: 1.19rem;
+
+// Button
+$btn-border-radius: 0;
+
+// Card
+$card-border-radius: 0;
+$card-border-width: 0;
 
 //Import the functions and the variables
 @import "../../node_modules/bootstrap/scss/functions";
@@ -43,23 +50,12 @@ $spacers: map-merge($custom-spacing, $spacers);
 // Import Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-body {
-    font-family: $ff-body;
-}
-
 h2 {
-    font-family: $ff-heading-2;
-    @include font-size(5.9375rem);
-}
-
-h3 {
-    font-family: $ff-heading-3;
-    @include font-size(1.1875rem);
+    @include font-size(3.125rem);
 }
 
 .nav-link {
     font-family: $ff-link;
-    font-weight: bold;
 }
 
 .quick-link a.nav-link {
@@ -71,16 +67,16 @@ time {
 }
 
 // General classes
+.title-big {
+    @include font-size(5.94rem);
+}
+
 .fb-content {
     flex-basis: content;
 }
 
 .text-fw-300 {
     font-family: $ff-text-light;
-}
-
-.btn-radius-0 {
-    border-radius: 0;
 }
 
 .link-padded-underline {
@@ -91,20 +87,7 @@ time {
     font-family: $ff-link;
 }
 
-.card-border-none {
-    border: none;
-    border-radius: 0;
-
-    img {
-        border-radius: 0;
-    }
-}
-
 // Customize Bootstrap classes
-.btn {
-    font-family: $ff-btn;
-}
-
 .dropdown-toggle::after {
     display: none;
 }
@@ -150,11 +133,6 @@ time {
 }
 
 .page-home {
-    em {
-        color: $emphasis-color;
-        font-style: normal;
-    }
-    
     h2::first-letter {
         color: $primary;
     }
@@ -217,22 +195,6 @@ time {
         .container-quick-link {
             position: relative;
             bottom: 15vh;
-        }
-    }
-}
-
-.page-news {
-    h2 {
-        @include font-size(3.125rem);
-    }
-
-    @media (min-width: 992px) {
-        .actu div[class^="col"]:first-child {
-            padding-left: 0;
-        }
-    
-        .actu div[class^="col"]:last-child {
-            padding-right: 0;
         }
     }
 }
