@@ -55,12 +55,12 @@ body {
 
 h2 {
     font-family: $ff-heading-2;
-    font-size: calc(5.203rem + 0.9vw);
+    @include font-size(5.9375rem);
 }
 
 h3 {
     font-family: $ff-heading-3;
-    font-size: 1.125rem;
+    @include font-size(1.1875rem);
 }
 
 .nav-link {
@@ -225,7 +225,7 @@ time {
 
 .page-news {
     h2 {
-        font-size: 3.125rem;
+        @include font-size(3.125rem);
     }
 
     @media (min-width: 992px) {
