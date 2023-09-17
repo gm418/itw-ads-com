@@ -228,11 +228,13 @@ time {
         font-size: 3.125rem;
     }
 
-    .actu div[class^="col"]:first-child {
-        padding-left: 0;
-    }
-
-    .actu div[class^="col"]:last-child {
-        padding-right: 0;
+    @media (min-width: 992px) {
+        .actu div[class^="col"]:first-child {
+            padding-left: 0;
+        }
+    
+        .actu div[class^="col"]:last-child {
+            padding-right: 0;
+        }
     }
 }
