@@ -87,6 +87,17 @@ time {
     font-family: $ff-link;
 }
 
+// Add boxshadow header
+header {
+    position: sticky;
+    top: -1px;
+    z-index: 3;
+}
+
+.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .5);
+}
+
 // Customize Bootstrap classes
 .dropdown-toggle::after {
     display: none;
