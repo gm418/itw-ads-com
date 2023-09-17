@@ -192,11 +192,9 @@ time {
         transform: translateY(-50%);
     }
 
-    @media (max-width: 991px) {
-        .text-overlay > * {
-            background: rgba(255, 255, 255, 0.75);
-        }
-    } 
+    .text-overlay > * {
+        background: rgba(255, 255, 255, 0.75);
+    }
 
     .carousel-indicators [data-bs-target] {
         background-color: $neutral-light;
