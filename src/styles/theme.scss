@@ -19,17 +19,17 @@ $big-spacing: 8.75;
 // Font-family
 $ff-primary: 'nexabold', sans-serif;
 $ff-secondary: 'open_sansregular', sans-serif;
-$ff-secondary-bold: 'open_sansbold', sans-serif;
-$ff-secondary-light: 'open_sanslight', sans-serif;
+$ff-secondary-700: 'open_sansbold', sans-serif;
+$ff-secondary-300: 'open_sanslight', sans-serif;
 
 $ff-body: $ff-secondary;
 $ff-heading-2: $ff-primary;
 $ff-heading-3: $ff-secondary;
 $ff-time: $ff-primary;
 $ff-quick-link: $ff-primary;
-$ff-link: $ff-secondary-bold;
-$ff-btn: $ff-secondary-bold;
-$ff-text-light: $ff-secondary-light;
+$ff-link: $ff-secondary-700;
+$ff-btn: $ff-secondary-700;
+$ff-text-light: $ff-secondary-300;
 
 //Import the functions and the variables
 @import "../../node_modules/bootstrap/scss/functions";
@@ -81,7 +81,7 @@ time {
     flex-basis: content;
 }
 
-.text-light {
+.text-fw-300 {
     font-family: $ff-text-light;
 }
 
