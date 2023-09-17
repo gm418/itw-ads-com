@@ -43,12 +43,6 @@ $spacers: map-merge($custom-spacing, $spacers);
 // Import Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-html,
-body {
-    height: 100%;
-    overflow-x: hidden;
-}
-
 body {
     font-family: $ff-body;
 }
@@ -104,6 +98,10 @@ time {
     img {
         border-radius: 0;
     }
+}
+
+.hidden {
+    display: none;
 }
 
 // Customize Bootstrap classes
