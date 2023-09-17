@@ -126,12 +126,6 @@ time {
 }
 
 // Pages specific styles
-@media (max-width: 991px) {
-    #js-menu {
-        display: none;
-    }
-}
-
 .page-home {
     h2::first-letter {
         color: $primary;
