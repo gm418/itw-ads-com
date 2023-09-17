@@ -1,29 +1,37 @@
-// import fonts
+// Import fonts
 @import "./fonts/nexa/stylesheet.css";
 @import "./fonts/open-sans/stylesheet.css";
 
 // Color
 $primary: #c50637;
 $dark: #212121;
-$navbar-dark-color: white;
+$neutral-light: hsla(129, 7%, 20%, 0.12);
+$white: #fff;
+$black: #000;
+
+$navbar-dark-color: $white;
+$nav-link-color: $black;
 $emphasis-color: $primary;
-$nav-link-color: black;
 
 // Spacing
 $big-spacing: 8.75;
 
-// font-family
-$heading-2-font-family: 'nexabold';
-$heading-3-font-family: 'open_sansregular';
-$body-font-family: 'open_sansregular';
-$body-font-family-light: 'open_sanslight';
-$time-font-family: 'nexabold';
-$quick-link-font-family: 'nexabold';
-$link-font-family: 'open_sansbold';
-$open-sanslight: 'open_sanslight';
-$open-sansbold: 'open_sansbold';
+// Font-family
+$ff-primary: 'nexabold', sans-serif;
+$ff-secondary: 'open_sansregular', sans-serif;
+$ff-secondary-bold: 'open_sansbold', sans-serif;
+$ff-secondary-light: 'open_sanslight', sans-serif;
 
-//import the functions and the variables
+$ff-body: $ff-secondary;
+$ff-heading-2: $ff-primary;
+$ff-heading-3: $ff-secondary;
+$ff-time: $ff-primary;
+$ff-quick-link: $ff-primary;
+$ff-link: $ff-secondary-bold;
+$ff-btn: $ff-secondary-bold;
+$ff-text-light: $ff-secondary-light;
+
+//Import the functions and the variables
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules//bootstrap/scss/variables";
 
@@ -32,7 +40,7 @@ $custom-spacing: (
 );
 $spacers: map-merge($custom-spacing, $spacers);
 
-// import bootstrap
+// Import Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 html,
@@ -42,40 +50,30 @@ body {
 }
 
 body {
-    font-family: $body-font-family;
+    font-family: $ff-body;
 }
 
 h2 {
-    font-family: $heading-2-font-family;
+    font-family: $ff-heading-2;
     font-size: calc(5.203rem + 0.9vw);
 }
 
 h3 {
+    font-family: $ff-heading-3;
     font-size: 1.125rem;
 }
 
-.container-quick-link {
-    bottom: 15vh;
-}
-
 .nav-link {
-    font-family: $link-font-family;
+    font-family: $ff-link;
+    font-weight: bold;
 }
 
-.quick-link {
-    font-family: $quick-link-font-family;
+.quick-link a.nav-link {
+    font-family: $ff-quick-link;
 }
 
-.btn {
-    font-family: $open-sansbold;
-}
-
-.dropdown-toggle::after {
-    display: none;
-}
-
-.btn-project {
-    border-radius: 0;
+time {
+    font-family: $ff-time;
 }
 
 // General classes
@@ -83,20 +81,20 @@ h3 {
     flex-basis: content;
 }
 
-.main-news-link {
+.text-light {
+    font-family: $ff-text-light;
+}
+
+.btn-radius-0 {
+    border-radius: 0;
+}
+
+.link-padded-underline {
     text-decoration: none;
     border-bottom-style: solid;
     border-width: 1px;
     padding-bottom: 3px;
-    font-family: $link-font-family;
-}
-
-.actu .col:first-child {
-    padding-left: 0;
-}
-
-.actu .col:last-child {
-    padding-right: 0;
+    font-family: $ff-link;
 }
 
 .card-border-none {
@@ -108,96 +106,25 @@ h3 {
     }
 }
 
-.open-sanslight {
-    font-family: $open-sanslight;
+// Customize Bootstrap classes
+.btn {
+    font-family: $ff-btn;
 }
 
-// Pages specific styles
-.page-home {
-    em {
-        color: $emphasis-color;
-        font-style: normal;
-    }
-    
-    h2::first-letter {
-        color: $primary;
-    }
-
-    @media (min-width: 992px) {
-        .carousel-indicators {
-            top: 12.5rem;
-            bottom: unset;
-            right: unset;
-            margin: 0;
-        }
-    }
-
-    .main-carousel {
-        min-height: 75dvh;
-
-        > .carousel-inner {
-            height: 75dvh;
-
-            >.carousel-item {
-                height: 75dvh;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: right;
-            }
-
-            > .carousel-item:nth-child(1) {
-                background-image: url('../../public/images/cover.jpg');
-            }
-
-            >.carousel-item:nth-child(2) {
-                background-image: url('../../public/images/cover.jpg');
-            }
-
-            >.carousel-item:nth-child(3) {
-                background-image: url('../../public/images/cover.jpg');
-            }
-        }
-
-    }
-
-    @media (max-width: 991px) {
-        .text-overlay > * {
-            background: rgba(255, 255, 255, 0.75);
-        }
-    } 
-
-    .text-center-absolute {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .carousel-indicators [data-bs-target] {
-        background-color: hsla(129, 7%, 20%, 0.12);
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .carousel-indicators .active {
-        background-color: $primary;
-    }
+.dropdown-toggle::after {
+    display: none;
 }
 
-.page-news {
-    h2 {
-        font-size: 3.125rem;
-    }
-}
-
+// Custom elements
 .custom-toggle {
     width: 45px;
     height: 3px;
     position: relative;
-    background-color: black;
+    background-color: $black;
     z-index: 2;
 
     &::before {
-        background-color: black;
+        background-color:$black;
         content: " ";
         position: absolute;
         width: 45px;
@@ -216,7 +143,96 @@ h3 {
         left: 0;
     }
 
-    & + span {
+    &+span {
         padding-top: 2.2rem;
+    }
+}
+
+// Pages specific styles
+.page-home {
+    em {
+        color: $emphasis-color;
+        font-style: normal;
+    }
+    
+    h2::first-letter {
+        color: $primary;
+    }
+
+    .main-carousel {
+        min-height: 75dvh;
+
+        >.carousel-inner {
+            height: 75dvh;
+
+            >.carousel-item {
+                height: 75dvh;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+
+            >.carousel-item:nth-child(1) {
+                background-image: url('/images/cover.jpg');
+            }
+
+            >.carousel-item:nth-child(2) {
+                background-image: url('/images/cover.jpg');
+            }
+
+            >.carousel-item:nth-child(3) {
+                background-image: url('/images/cover.jpg');
+            }
+        }
+    }
+
+    .text-v-center-absolute {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @media (max-width: 991px) {
+        .text-overlay > * {
+            background: rgba(255, 255, 255, 0.75);
+        }
+    } 
+
+    .carousel-indicators [data-bs-target] {
+        background-color: $neutral-light;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .carousel-indicators .active {
+        background-color: $primary;
+    }
+
+    @media (min-width: 992px) {
+        .carousel-indicators {
+            top: 12.5rem;
+            bottom: unset;
+            right: unset;
+            margin: 0;
+        }
+
+        .container-quick-link {
+            position: relative;
+            bottom: 15vh;
+        }
+    }
+}
+
+.page-news {
+    h2 {
+        font-size: 3.125rem;
+    }
+
+    .actu div[class^="col"]:first-child {
+        padding-left: 0;
+    }
+
+    .actu div[class^="col"]:last-child {
+        padding-right: 0;
     }
 }
