@@ -147,6 +147,12 @@ time {
 }
 
 // Pages specific styles
+@media (max-width: 991px) {
+    #js-menu {
+        display: none;
+    }
+}
+
 .page-home {
     em {
         color: $emphasis-color;
