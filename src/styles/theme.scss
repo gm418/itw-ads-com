@@ -265,3 +265,15 @@ header {
 .fade-in > .nav-item:nth-child(6) {
     animation-delay: 1.25s;
 }
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
