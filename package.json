@@ -6,7 +6,8 @@
   "scripts": {
     "watch": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "preview": "vite preview --port 8080"
   },
   "author": "Gaëlle Morin",
   "license": "ISC",
