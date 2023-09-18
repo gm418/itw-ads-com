@@ -138,7 +138,7 @@ header {
 
 // Pages specific styles
 .page-home {
-    h2::first-letter {
+    h3::first-letter {
         color: $primary;
     }
 
