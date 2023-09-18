@@ -17,4 +17,4 @@ Allez sur le lien indiqué dans le terminal.
 
 ## Faire un build
 
-Entrez la commande `npm run build`.
+Entrez la commande `npm run build` pour builder le site dans `./dist`.
