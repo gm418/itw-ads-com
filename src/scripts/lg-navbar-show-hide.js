@@ -5,4 +5,7 @@ const menuButton = document.querySelector('#js-menu-button'),
 menuButton.addEventListener('click', () => {
     menuPanel.classList.contains('d-lg-block') ?
     menuPanel.classList.remove('d-lg-block') : menuPanel.classList.add('d-lg-block');
+    
+    let expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+    menuButton.setAttribute('aria-expanded', !expanded);
 });
