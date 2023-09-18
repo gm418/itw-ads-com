@@ -4,6 +4,7 @@
 
 // Color
 $primary: #c50637;
+$primary-light: #f1ebeb;
 $dark: #212121;
 $neutral-light: hsla(129, 7%, 20%, 0.12);
 $white: #fff;
@@ -46,6 +47,11 @@ $custom-spacing: (
     6: $spacer * $big-spacing
 );
 $spacers: map-merge($custom-spacing, $spacers);
+
+$custom-color: (
+    'primary-light': $primary-light
+);
+$theme-colors: map-merge($custom-color, $theme-colors);
 
 // Import Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
