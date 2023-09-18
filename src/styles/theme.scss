@@ -205,7 +205,6 @@ header {
 }
 
 // Animation
-// Zoom
 .zoom-icon {
     transform: scale(1);
 
@@ -216,11 +215,53 @@ header {
     }
 }
 
-// Tranlate link
 .translate-link {
     transition: transform 0.7s ease-in-out;
 }
 
 .translate-link:hover {
     transform: translateX(30px);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in > .nav-item {
+    animation: fadeIn 0.5s linear;
+    animation-fill-mode: both;
+}
+
+.fade-in > .nav-item:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.fade-in > .nav-item:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.fade-in > .nav-item:nth-child(3) {
+    animation-delay: 0.50s;
+}
+
+.fade-in > .nav-item:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+.fade-in > .nav-item:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.fade-in > .nav-item:nth-child(6) {
+    animation-delay: 1.25s;
 }
