@@ -206,7 +206,7 @@ header {
 
 // Animation
 // Zoom
-.zoom {
+.zoom-icon {
     transform: scale(1);
 
     &:hover img {
@@ -214,4 +214,13 @@ header {
         transition-duration: 0.8s;
         transition-timing-function: ease-in;
     }
+}
+
+// Tranlate link
+.translate-link {
+    transition: transform 0.7s ease-in-out;
+}
+
+.translate-link:hover {
+    transform: translateX(30px);
 }
