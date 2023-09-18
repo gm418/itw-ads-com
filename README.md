@@ -2,7 +2,7 @@
 
 ## Prérequis
 
-Vous devez avoir installé [NodeJS](https://nodejs.org/en/download) et [npm] (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+Vous devez avoir installé [NodeJS](https://nodejs.org/en/download) et [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## Installation
 
