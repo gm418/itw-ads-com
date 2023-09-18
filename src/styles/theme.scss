@@ -110,6 +110,7 @@ header {
     position: relative;
     background-color: $black;
     z-index: 2;
+    transition: .4s linear;
 
     &::before {
         background-color:$black;
@@ -119,6 +120,7 @@ header {
         height: 3px;
         top: 13px;
         right: 0;
+        transition: .4s linear;
     }
 
     &::after {
@@ -129,10 +131,28 @@ header {
         height: 3px;
         top: 26px;
         left: 0;
+        transition: .4s linear;
     }
 
     &+span {
         padding-top: 2.2rem;
+    }
+}
+
+button[aria-expanded="true"] .custom-toggle {
+    transform-origin: top;
+    transform: rotateZ(45deg) translate(8px, 0px);
+    
+    &::before {
+        transform-origin: top;
+        width: 50%;
+        transform: translate(-14px, -22px) rotateZ(-90deg);
+    }
+
+    &::after {
+        transform-origin: bottom;
+        width: 50%;
+        transform: translate(12px, -15px) rotateZ(-90deg);
     }
 }
 
